@@ -7,6 +7,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+const cors = require('cors');
+
+// Allow only your frontend on Vercel
+app.use(cors({
+  origin: 'https://zone51.vercel.app',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
+}));
+
 // === Serve Static Files ===
 // Assets like images, CSS, frontend scripts
 app.use('/assets', express.static(path.join(__dirname, 'assets')));

@@ -7,21 +7,22 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Static assets
+// === Serve Static Files ===
+// Assets like images, CSS, frontend scripts
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, 'public'))); // for admin.html and others
 
-// File paths
+// === File Paths ===
 const PRODUCTS_FILE = path.join(__dirname, 'products.json');
 const STOCK_FILE = path.join(__dirname, 'stock.json');
 const SALES_FILE = path.join(__dirname, 'sales.json');
 
-// Utility to read JSON file
+// === Utility Functions ===
 async function readJson(file) {
   const data = await fs.readFile(file, 'utf-8');
   return JSON.parse(data);
 }
 
-// Utility to write JSON file
 async function writeJson(file, data) {
   await fs.writeFile(file, JSON.stringify(data, null, 2));
 }
@@ -88,10 +89,11 @@ app.get('/api/report', async (req, res) => {
   }
 });
 
-// === ADMIN PAGE ===
+// === ADMIN PAGE ROUTE ===
 app.get('/admin', (req, res) => {
-  res.sendFile(path.join(__dirname, 'admin.html'));
+  res.sendFile(path.join(__dirname, 'public', 'admin.html')); // make sure admin.html is inside /public
 });
+
 // === START SERVER ===
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

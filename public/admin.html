@@ -10,8 +10,29 @@
   </style>
 </head>
 <body>
+  <script>
+  async function fetchReport() {
+    try {
+      const res = await fetch('https://zone51-backend.onrender.com/api/report');
+      const data = await res.json();
+
+      document.getElementById('totalSales').textContent = data.totalSales;
+      document.getElementById('totalRevenue').textContent = "R" + data.totalRevenue.toFixed(2);
+    } catch (err) {
+      console.error('Failed to fetch report:', err);
+    }
+  }
+
+  // Initial fetch
+  fetchReport();
+
+  // Update every 10 seconds
+  setInterval(fetchReport, 10000);
+</script>
   <h1>Sales Report</h1>
   <div id="sales-report"></div>
+  <p>Total Sales: <span id="totalSales">Loading...</span></p>
+<p>Total Revenue: <span id="totalRevenue">Loading...</span></p>
 <script src="../frontend/script.js"></script>
 </body>
 </html>

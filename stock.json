@@ -1,42 +1,22 @@
 [
-  {
-    "id": "b001",
-    "stock": 50,
-    "costPrice": 80.0
-  },
-  {
-    "id": "b002",
-    "stock": 50,
-    "costPrice": 270.0
-  },
-  {
-    "id": "e101",
-    "stock": 50,
-    "costPrice": 600.0
-  },
-  {
-    "id": "e102",
-    "stock": 50,
-    "costPrice": 779.4
-  },
-  {
-    "id": "c301",
-    "stock": 50,
-    "costPrice": 130.0
-  },
-  {
-    "id": "c302",
-    "stock": 50,
-    "costPrice": 239.4
-  },
-  {
-    "id": "g501",
-    "stock": 50,
-    "costPrice": 400.0
-  },
-  {
-    "id": "g502",
-    "stock": 50,
-    "costPrice": 659.4
-  }
+  { "id": "b001", "stock": 50, "costPrice": 120.00 },
+  { "id": "b002", "stock": 50, "costPrice": 2100.00 },
+  { "id": "b003", "stock": 50, "costPrice": 220.00 },
+  { "id": "b004", "stock": 50, "costPrice": 180.00 },
+  { "id": "a001", "stock": 50, "costPrice": 45.00 },
+  { "id": "a002", "stock": 50, "costPrice": 60.00 },
+  { "id": "a003", "stock": 50, "costPrice": 35.00 },
+  { "id": "a004", "stock": 50, "costPrice": 55.00 },
+  { "id": "m001", "stock": 50, "costPrice": 300.00 },
+  { "id": "m002", "stock": 50, "costPrice": 120.00 },
+  { "id": "m003", "stock": 50, "costPrice": 90.00 },
+  { "id": "am01", "stock": 50, "costPrice": 25.00 },
+  { "id": "am02", "stock": 50, "costPrice": 40.00 },
+  { "id": "am03", "stock": 50, "costPrice": 30.00 },
+  { "id": "d001", "stock": 50, "costPrice": 400.00 },
+  { "id": "d002", "stock": 50, "costPrice": 60.00 },
+  { "id": "d003", "stock": 50, "costPrice": 20.00 },
+  { "id": "p001", "stock": 50, "costPrice": 120.00 },
+  { "id": "p002", "stock": 50, "costPrice": 180.00 },
+  { "id": "p003", "stock": 50, "costPrice": 45.00 }
 ]

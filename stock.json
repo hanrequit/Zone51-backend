@@ -1,0 +1,42 @@
+[
+  {
+    "id": "b001",
+    "stock": 50,
+    "costPrice": 80.0
+  },
+  {
+    "id": "b002",
+    "stock": 50,
+    "costPrice": 270.0
+  },
+  {
+    "id": "e101",
+    "stock": 50,
+    "costPrice": 600.0
+  },
+  {
+    "id": "e102",
+    "stock": 50,
+    "costPrice": 779.4
+  },
+  {
+    "id": "c301",
+    "stock": 50,
+    "costPrice": 130.0
+  },
+  {
+    "id": "c302",
+    "stock": 50,
+    "costPrice": 239.4
+  },
+  {
+    "id": "g501",
+    "stock": 50,
+    "costPrice": 400.0
+  },
+  {
+    "id": "g502",
+    "stock": 50,
+    "costPrice": 659.4
+  }
+]

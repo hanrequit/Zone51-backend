@@ -1,0 +1,162 @@
+[
+  {
+    "id": "b001",
+    "name": "How To Scam And Make Lots of Money",
+    "category": "Books",
+    "price": 450.0,
+    "image": "assets/howtoscambooks.jpg",
+    "description": "A classic strategy guide by an anonymous writer on how to scam people."
+  },
+  {
+    "id": "b002",
+    "name": "The Department of Truth: The Complete Conspiracy: Volume 1 - 5",
+    "category": "Books",
+    "price": 7500.0,
+    "image": "assets/thedepartmentoftruthbooks.jpg",
+    "description": "A shadowy agency manipulates reality by turning conspiracy theories into truth."
+  },
+  {
+    "id": "b003",
+    "name": "Behind a Pale Horse: The Forbidden Edition",
+    "category": "Books",
+    "price": 724.99,
+    "image": "assets/behindapalehorsebooks.jpg",
+    "description": "A former naval officer exposes government secrets, alien cover-ups, and the New World Order."
+  },
+  {
+    "id": "b004",
+    "name": "The Men Who Stare at Goats",
+    "category": "Books",
+    "price": 568.99,
+    "image": "assets/themenwhostareatgoatsbooks.jpg",
+    "description": "A secretive military unit, psychic warfare, and a goat that never stood a chance — the truth is stranger than fiction."
+  },
+  {
+    "id": "a001",
+    "name": "Tinfoil: The Hat Pro Edition",
+    "category": "Wearables & Accessories",
+    "price": 479.99,
+    "image": "assets/tinfoilhatsacc.jpg",
+    "description": "Stay safe from the Government and the Aliens. Everything you need in one pack!"
+  },
+  {
+    "id": "a002",
+    "name": "Cryptid Spotter Sunglasses",
+    "category": "Wearables & Accessories",
+    "price": 784.99,
+    "image": "assets/cryptidsunglassesacc.jpeg",
+    "description": "These shades reveal things hidden to the naked eye — like alien footsteps!"
+  },
+  {
+    "id": "a003",
+    "name": "Men in Black Tie",
+    "category": "Wearables & Accessories",
+    "price": 475.00,
+    "image": "assets/maninblacktieacc.jpeg",
+    "description": "A sleek black tie with binary code stitched in. Professional... or suspicious?"
+  },
+  {
+    "id": "a004",
+    "name": "Reptilian Repellent Bracelet",
+    "category": "Wearables & Accessories",
+    "price": 250.00,
+    "image": "assets/braceletacc.jpeg",
+    "description": "A 'handcrafted' fashionable bracelet that's 100% effective. Trust us."
+  },
+  {
+    "id": "m001",
+    "name": "Area 51 Mystery Box",
+    "category": "Mystery Packs & Kits",
+    "price": 2000.00,
+    "image": "assets/area51packagemys.jpg",
+    "description": "Includes classified documents, alien plushies, and a fake Area 51 clearance ID — there might be more, or less..."
+  },
+  {
+    "id": "m002",
+    "name": "Flat Earth Explorer's Kit",
+    "category": "Mystery Packs & Kits",
+    "price": 2500.00,
+    "image": "assets/flatearthexplorerskitmys.jpg",
+    "description": "Comes with a compass (that ONLY points to the truth), outdated maps, and a DIY globe!"
+  },
+  {
+    "id": "m003",
+    "name": "Build-Your-Own Crop Circle Kit",
+    "category": "Mystery Packs & Kits",
+    "price": 2500.00,
+    "image": "assets/buildyourowncropcirclekitmys.jpg",
+    "description": "This kit has everything you need to make your own crop circle — grass included!"
+  },
+  {
+    "id": "am01",
+    "name": "'Real Frequencies' Cassette",
+    "category": "Audio/Media",
+    "price": 1000.00,
+    "image": "assets/realfrequenciestapeaud.jpg",
+    "description": "Plays static, coded messages, and a mysterious voice whispering 'they're listening'..."
+  },
+  {
+    "id": "am02",
+    "name": "The Truth Frequency USB",
+    "category": "Audio/Media",
+    "price": 1250.00,
+    "image": "assets/thetruthfrequencyusbaud.jpg",
+    "description": "Includes random encrypted files from Government HQ, redacted images, and leaked alien audio threats."
+  },
+  {
+    "id": "am03",
+    "name": "Moon Landing Soundtrack",
+    "category": "Audio/Media",
+    "price": 1742.99,
+    "image": "assets/moonlandingsoundtrackaud.jpg",
+    "description": "Actual recording of the moon landing. (Or is it?)"
+  },
+  {
+    "id": "d001",
+    "name": "Illuminati Night Light",
+    "category": "Decor & Novelties",
+    "price": 1450.00,
+    "image": "assets/iluminatinightlampdecor.jpg",
+    "description": "This unique night lamp watches those who watch it. Dare your luck?"
+  },
+  {
+    "id": "d002",
+    "name": "Alien Skeleton Fridge Magnet",
+    "category": "Decor & Novelties",
+    "price": 199.99,
+    "image": "assets/alienskeletonmagnentdecor.jpg",
+    "description": "This specific magnet is an exact replica of the piece recovered from Roswell — and one lucky buyer might get a surprise!"
+  },
+  {
+    "id": "d003",
+    "name": "Interdimensional Portal Keychain",
+    "category": "Decor & Novelties",
+    "price": 74.99,
+    "image": "assets/interdimensionalportalkeychaindecor.jpg",
+    "description": "This unique piece glows faintly... and could be nothing — or something more."
+  },
+  {
+    "id": "p001",
+    "name": "Government Redaction Coloring Book",
+    "category": "Printed Goods",
+    "price": 459.99,
+    "image": "assets/governmentredactioncoloringbookpg.jpg",
+    "description": "A copy of top-secret FBI files. Use your markers to censor what *you* think they should hide."
+  },
+  {
+    "id": "p002",
+    "name": "Bigfoot's Diary",
+    "category": "Printed Goods",
+    "price": 685.92,
+    "image": "assets/bigfootsdiarypg.jpg",
+    "description": "This could contain the secrets and final thoughts of the infamous Bigfoot before he was caught. Dare to find out?"
+  },
+  {
+    "id": "p003",
+    "name": "Time Traveler's Calendar 2025",
+    "category": "Printed Goods",
+    "price": 168.99,
+    "image": "assets/timetravelerscalendarpg.jpg",
+    "description": "Calendars can be tricky, but this one? It's encrypted in alien tongue. Grab yours before time runs out!"
+  }
+]

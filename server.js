@@ -54,6 +54,7 @@ app.get('/api/products', async (req, res) => {
 });
 
 // Record a sale
+
 app.post('/api/sale', async (req, res) => {
   const sale = req.body;
 
@@ -66,18 +67,21 @@ app.post('/api/sale', async (req, res) => {
     const sales = await readJson(SALES_FILE);
 
     let totalProfit = 0;
+    let totalRevenue = 0; // <-- Add this line
 
     sale.items.forEach(item => {
       const product = stock.find(p => p.id === item.id);
       if (product) {
         product.stock -= item.quantity;
         totalProfit += item.quantity * (item.price - product.costPrice);
+        totalRevenue += item.quantity * item.price; // <-- Add this line
       }
     });
 
     const newSale = {
       ...sale,
       totalProfit,
+      totalRevenue, // <-- Add this line
       timestamp: new Date().toISOString(),
     };
 
@@ -86,11 +90,23 @@ app.post('/api/sale', async (req, res) => {
     await writeJson(STOCK_FILE, stock);
     await writeJson(SALES_FILE, sales);
 
-    res.json({ message: 'Sale recorded', profit: totalProfit });
+    res.json({ message: 'Sale recorded', profit: totalProfit, revenue: totalRevenue }); // <-- Add revenue to response
   } catch (err) {
     res.status(500).json({ error: 'Failed to record sale.' });
   }
 });
+
+app.get('/api/report', async (req, res) => {
+  try {
+    const sales = await readJson(SALES_FILE);
+    const totalRevenue = sales.reduce((sum, sale) => sum + (sale.totalRevenue || 0), 0); // <-- Change to totalRevenue
+    const totalProfit = sales.reduce((sum, sale) => sum + (sale.totalProfit || 0), 0);   // <-- Optionally add profit
+    res.json({ totalSales: sales.length, totalRevenue, totalProfit }); // <-- Return both
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to generate report.' });
+  }
+});
+
 
 // Get report
 app.get('/api/report', async (req, res) => {

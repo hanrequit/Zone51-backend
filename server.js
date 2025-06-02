@@ -107,18 +107,6 @@ app.get('/api/report', async (req, res) => {
   }
 });
 
-
-// Get report
-app.get('/api/report', async (req, res) => {
-  try {
-    const sales = await readJson(SALES_FILE);
-    const totalRevenue = sales.reduce((sum, sale) => sum + (sale.totalProfit || 0), 0);
-    res.json({ totalSales: sales.length, totalRevenue });
-  } catch (err) {
-    res.status(500).json({ error: 'Failed to generate report.' });
-  }
-});
-
 // === ADMIN PAGE ROUTE ===
 app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'admin.html')); // make sure admin.html is inside /public

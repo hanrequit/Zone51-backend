@@ -5,13 +5,19 @@ const path = require('path');
 const app = express();
 app.use(express.json());
 
-const cors = require('cors');
+const allowedOrigins = [
+  'https://zone51.vercel.app',
+  'https://zone51-frontend.onrender.com'
+];
 
-// Allow only your frontend on Vercel
 app.use(cors({
-  origin: 'https://zone51.vercel.app',
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type']
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('CORS not allowed from this origin: ' + origin));
+    }
+  }
 }));
 
 // === Serve Static Files ===

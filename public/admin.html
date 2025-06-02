@@ -10,24 +10,28 @@
   </style>
 </head>
 <body>
-  <script>
-  async function fetchReport() {
-    try {
-      const res = await fetch('https://zone51-backend.onrender.com/api/report');
-      const data = await res.json();
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    async function fetchReport() {
+      try {
+        const res = await fetch('https://zone51-backend.onrender.com/api/report');
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        const data = await res.json();
 
-      document.getElementById('totalSales').textContent = data.totalSales;
-      document.getElementById('totalRevenue').textContent = "R" + data.totalRevenue.toFixed(2);
-    } catch (err) {
-      console.error('Failed to fetch report:', err);
+        console.log(data); // For debugging
+
+        document.getElementById('totalSales').textContent = data.totalSales;
+        document.getElementById('totalRevenue').textContent = "R" + data.totalRevenue.toFixed(2);
+      } catch (err) {
+        console.error('Failed to fetch report:', err);
+        document.getElementById('totalSales').textContent = 'Error';
+        document.getElementById('totalRevenue').textContent = 'Error';
+      }
     }
-  }
 
-  // Initial fetch
-  fetchReport();
-
-  // Update every 10 seconds
-  setInterval(fetchReport, 10000);
+    fetchReport();
+    setInterval(fetchReport, 10000);
+  });
 </script>
   <h1>Sales Report</h1>
   <div id="sales-report"></div>
